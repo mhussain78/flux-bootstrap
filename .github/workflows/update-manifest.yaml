@@ -4,6 +4,8 @@ jobs:
   cypress-run:
     runs-on: ubuntu-latest
     steps:
+      - run: |
+          echo "${{ github.event.action }}"
       - run: echo "Hello :-)"
       - name: Get code
         uses: actions/checkout@v4
