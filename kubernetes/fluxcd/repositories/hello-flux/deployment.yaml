@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-flux
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      app: hello-flux-app
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: hello-flux-app
+    spec:
+      containers:
+        - name: hello-flux-app
+          image: mhussain78/hello-flux:latest
+          ports:
+            - containerPort: 8080
