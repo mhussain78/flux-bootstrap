@@ -1,0 +1,9 @@
+name: workflow_02
+on: [repository_dispatch]
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello :-)"
+      - name: Get code
+        uses: actions/checkout@v4
