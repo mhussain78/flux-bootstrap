@@ -7,5 +7,6 @@ jobs:
       - run: echo "Hello :-)"
       - name: Get code
         uses: actions/checkout@v4
+      - run: ls -lah
       - run: |
           sed -i '' -e "s|image: mhussain78/hello-flux:.*|image: mhussain78/hello-flux:0.0.2|" ./kubernetes/fluxcd/repositories/hello-flux/deployment.yaml
