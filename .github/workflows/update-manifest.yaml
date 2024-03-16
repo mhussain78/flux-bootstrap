@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          echo "${{ github.event.client_payload.image-tag "
+          echo "${{ github.event }} "
       - run: echo "Hello :-)"
       - name: Get code
         uses: actions/checkout@v4
