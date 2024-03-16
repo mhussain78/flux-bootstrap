@@ -1,5 +1,5 @@
 name: workflow_02
-on: [repository_dispatch, workflow_dispatch]
+on: [workflow_dispatch]
 jobs:
   cypress-run:
     permissions:
