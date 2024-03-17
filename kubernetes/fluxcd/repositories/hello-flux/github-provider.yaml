@@ -1,0 +1,10 @@
+apiVersion: notification.toolkit.fluxcd.io/v1beta3
+kind: Provider
+metadata:
+  name: github-dispatch
+  namespace: default
+spec:
+  type: githubdispatch
+  address: https://github.com/mhussain78/fluxcd-installation-test
+  secretRef:
+    name: api-token
