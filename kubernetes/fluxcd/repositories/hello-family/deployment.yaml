@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-family
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      app: hello-family-app
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: hello-family-app
+    spec:
+      containers:
+        - name: hello-flux-app
+          image: mhussain78/hello-flux:0.0.43
+          ports:
+            - containerPort: 8080
