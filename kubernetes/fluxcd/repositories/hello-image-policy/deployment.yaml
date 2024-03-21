@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: hello-image-app
-          image: mhussain78/hello-flux:0.0.47
+          image: mhussain78/hello-flux:0.0.47  # {"$imagepolicy": "default:hello-image-app"}
           ports:
             - containerPort: 8080
