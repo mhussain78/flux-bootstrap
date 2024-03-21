@@ -1,0 +1,9 @@
+---
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImageRepository
+metadata:
+  name: hello-flux
+  namespace: flux-system
+spec:
+  image: mhussain78/hello-flux
+  interval: 10s
