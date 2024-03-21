@@ -6,7 +6,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m0s
-  path: ./kubernetes/fluxcd/repositories/hello-image
+  path: ./kubernetes/fluxcd/repositories/hello-image-policy
   prune: true
   sourceRef:
     kind: GitRepository
