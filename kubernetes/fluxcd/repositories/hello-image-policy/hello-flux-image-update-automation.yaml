@@ -20,5 +20,5 @@ spec:
     push:
       branch: fluxcd-2022
   update:
-    path: ./kubernetes/fluxcd/repositories/hello-image-policy/kustomization.yaml
+    path: ./kubernetes/fluxcd/repositories/hello-image-policy/deployment.yaml
     strategy: Setters
