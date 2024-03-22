@@ -7,4 +7,6 @@ spec:
   interval: 1m0s
   ref:
     branch: fluxcd-2022
-  url: https://github.com/mhussain78/flux-bootstrap
+  secretRef:
+    name: hello-image
+  url: ssh://git@github.com/flux-bootstrap.git
