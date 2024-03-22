@@ -15,7 +15,7 @@ spec:
     commit:
       author:
         email: inf.mhussain@googlemail.com
-        name: Mohamad Hussain
+        name: Mohamad Sami Abbas Hussain
       messageTemplate: '{{range .Updated.Images}}{{println .}}{{end}}'
     push:
       branch: fluxcd-2022
