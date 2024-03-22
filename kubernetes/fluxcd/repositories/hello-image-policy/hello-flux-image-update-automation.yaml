@@ -14,9 +14,12 @@ spec:
         branch: fluxcd-2022
     commit:
       author:
-        email: fluxcdbot@users.noreply.github.com
-        name: fluxcdbot
+        email: inf.mhussain@googlemail.com
+        name: Mohamad Hussain
       messageTemplate: '{{range .Updated.Images}}{{println .}}{{end}}'
+      signingKey:
+        secretRef:
+          name: hello-image-github
     push:
       branch: fluxcd-2022
   update:
