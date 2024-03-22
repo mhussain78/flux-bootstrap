@@ -9,4 +9,4 @@ spec:
     branch: fluxcd-2022
   secretRef:
     name: hello-image
-  url: ssh://git@github.com/flux-bootstrap.git
+  url: ssh://git@github.com/mhussain78/flux-bootstrap.git
