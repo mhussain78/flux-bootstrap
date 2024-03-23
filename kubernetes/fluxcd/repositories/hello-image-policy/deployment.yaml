@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: hello-image-app
-          image: docker.io/mhussain78/hello-flux:0.0.53 # {"$imagepolicy": "flux-system:hello-image"}
+          image: docker.io/mhussain78/hello-flux:0.0.54 # {"$imagepolicy": "flux-system:hello-image"}
           ports:
             - containerPort: 8080
