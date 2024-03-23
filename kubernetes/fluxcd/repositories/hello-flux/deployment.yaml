@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: hello-flux-app
-          image: mhussain78/hello-flux:0.0.52
+          image: mhussain78/hello-flux:0.0.53
           ports:
             - containerPort: 8080
