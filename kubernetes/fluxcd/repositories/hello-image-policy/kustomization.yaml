@@ -2,6 +2,3 @@ resources:
   - deployment.yaml
   - service.yaml
   - ingress.yaml
-  - hello-flux-image-repo.yaml
-  - hello-flux-image-policy.yaml
-  - hello-flux-image-update-automation.yaml
